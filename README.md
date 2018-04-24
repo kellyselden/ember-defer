@@ -1,7 +1,10 @@
 ember-defer
 ==============================================================================
 
-[Short description of the addon.]
+[![npm version](https://badge.fury.io/js/ember-defer.svg)](https://badge.fury.io/js/ember-defer)
+[![Build Status](https://travis-ci.org/kellyselden/ember-defer.svg?branch=master)](https://travis-ci.org/kellyselden/ember-defer)
+
+A deferred promise shim
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,7 +17,15 @@ ember install ember-defer
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```js
+import Deferred from 'ember-defer';
+
+let deferred = new Deferred();
+
+deferred.resolve();
+
+await deferred.promise;
+```
 
 
 Contributing
